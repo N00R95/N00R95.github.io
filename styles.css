@@ -561,7 +561,7 @@ flex-direction: column;
 }
 
 }
-@media screen and (max-width :480 px) {
+@media screen and (max-width :480px) {
     .footer-link-items{
 margin: 0;
 padding: 10px;
