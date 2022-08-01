@@ -427,11 +427,12 @@ height: 1400px;
     }
 .serv h1{
 font-size: 1.2rem;
+margin: -10px;
 }
 .serv-card {
-width: 200px;
-height: 200px;
-margin: 40px;
+    width: 230px;
+    height: 250px;
+    margin: 160px;
 }
 .serv button{
     padding: 10px 20px;
