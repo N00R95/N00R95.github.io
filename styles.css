@@ -322,8 +322,7 @@ font-size: 1.5rem;
     .main-btn{
 
 padding: 12px 36px;
-margin: 2.5rem 0;
- }
+margin: 2.5rem 0; } 
 }
 /* Services */
 
@@ -339,7 +338,7 @@ height: 100vh;
 
 background-color: #ff8177;
 background-image: linear-gradient(to right,
- #ff8177 0%, 
+  #ff8177 0%, 
  #ff867a 0% ,
  #ff8c7f 21%,
  #f99185 52%, 
@@ -430,7 +429,7 @@ height: 1400px;
 font-size: 1.2rem;
 }
 .serv-card {
-width: 300px;
+width: fit-content;
 }
 
 }
