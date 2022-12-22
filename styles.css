@@ -338,7 +338,7 @@ height: 100vh;
 
 background-color: #ff8177;
 background-image: linear-gradient(to right,
-  #ff8177 0%, 
+ #ff8177 0%, 
  #ff867a 0% ,
  #ff8c7f 21%,
  #f99185 52%, 
@@ -513,6 +513,7 @@ transition: 0.3s ease-out;
 .social-icon-link{
 color: #fff;
 font-size: 24px;
+text-decoration: none;
 }
 .social-media{
 max-width: 1000px;
