@@ -1,0 +1,344 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+  background-color: #fff;
+  height: 100%;
+}
+body{
+     position: relative;
+  font-family: 'Noticia Text';
+  text-align: center;
+  background: linear-gradient(180deg, #281130 0, #0f0021);
+  height: 100%;
+  margin: 8px;
+  min-height: 500px;
+    background: linear-gradient(180deg,#281130 0,#0f0021);
+}
+
+body:before,
+body:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+body:before {
+  background-color: #00ffff;
+  z-index: -1;
+  -webkit-animation: glitchy 0.3s ease 0.3s infinite;
+          animation: glitchy 0.3s ease 0.3s infinite;
+}
+body:after {
+  background-color: #ff00ff;
+  z-index: -2;
+  animation: glitchy 0.3s ease infinite reverse;
+}
+.head{
+    text-align: center;
+    padding-top: 10vh;
+}
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background: rgb(184, 181, 181);
+    border-radius: 10px;
+}
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 75%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color:#281130 ;
+}
+#newtask button{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+   
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+   
+    border: none;
+ 
+    cursor: pointer;
+    outline: none;
+}
+#tasks{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #fff;
+       background: linear-gradient(180deg, #8e40a8 0, #286269);
+    color: #ffffff;
+    height: 100%;
+    width: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+
+h1 {
+  position: absolute;
+  color: #fff;
+  left: -50px;
+  top: 50%;
+  transform: rotate(-90deg);
+  margin: -22px 0 0;
+}
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.table-cell > div {
+  padding: 45px 0;
+}
+.btn-link {
+  position: relative;
+  display: inline-block;
+  color: #281130;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-radius: 5px;
+  z-index: 1;
+}
+.btn-link:before,
+.btn-link:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  
+}
+.btn-link:before {
+      border-radius: 5px;
+  background-color: #00ffff;
+  z-index: -1;
+    border-radius: 5px;
+}
+.btn-link:after {
+  background-color: #ff00ff;
+  z-index: -2;
+}
+.btn-link:hover .link-inner {
+      border-radius: 5px;
+  -webkit-animation: glitchy 0.3s ease 1;
+          animation: glitchy 0.3s ease 1;
+}
+.btn-link:hover:before {
+      border-radius: 5px;
+  -webkit-animation: glitchy 0.3s ease 0.3s infinite;
+          animation: glitchy 0.3s ease 0.3s infinite;
+}
+.btn-link:hover:after {
+  animation: glitchy 0.3s ease infinite reverse;
+}
+.link-inner {
+  display: block;
+  height: 100%;
+  background-color: #fff;
+  padding: 15px 25px;
+}
+.text-link {
+  position: relative;
+  display: inline-block;
+  font-size: 45px;
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
+}
+.text-link:before,
+.text-link:after {
+  content: attr(data-content);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.text-link:before {
+  color: #00ffff;
+  z-index: -1;
+}
+.text-link:after {
+  color: #ff00ff;
+  z-index: -2;
+}
+.text-link:hover:before {
+  -webkit-animation: glitchy 0.3s ease 0.3s infinite;
+          animation: glitchy 0.3s ease 0.3s infinite;
+}
+.text-link:hover:after {
+  animation: glitchy 0.3s ease infinite reverse;
+}
+.line-link {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-weight: lighter;
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  padding-bottom: 10px;
+}
+.line-link:before,
+.line-link:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  visibility: hidden;
+}
+.line-link:before {
+  background-color: #00ffff;
+  z-index: -1;
+}
+.line-link:after {
+  background-color: #ff00ff;
+  z-index: -2;
+}
+.line-link:hover:before {
+  visibility: visible;
+  -webkit-animation: line-glitchy 0.3s ease 0.3s infinite;
+          animation: line-glitchy 0.3s ease 0.3s infinite;
+}
+.line-link:hover:after {
+  visibility: visible;
+  animation: line-glitchy 0.3s ease infinite reverse;
+}
+@-webkit-keyframes glitchy {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+@keyframes glitchy {
+  0% {
+    transform: translate(-2px, 2px);
+  }
+  25% {
+    transform: translate(-2px, -2px);
+  }
+  50% {
+    transform: translate(2px, 2px);
+  }
+  75% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(-2px, 2px);
+  }
+}
+@-webkit-keyframes line-glitchy {
+  0% {
+    transform: translate(-1px, 1px);
+  }
+  25% {
+    transform: translate(-1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 1px);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}
+@keyframes line-glitchy {
+  0% {
+    transform: translate(-1px, 1px);
+  }
+  25% {
+    transform: translate(-1px, -1px);
+  }
+  50% {
+    transform: translate(1px, 1px);
+  }
+  75% {
+    transform: translate(1px, -1px);
+  }
+  100% {
+    transform: translate(-1px, 1px);
+  }
+}

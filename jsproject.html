@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN-->
+     <script src="https://kit.fontawesome.com/c9624481c3.js" crossorigin="anonymous"></script>
+ <title>ToDO list</title>
+</head>
+<body>
+
+            <h1><a  data-content="ToDo List" class="text-link">
+               ToDo List
+            </a></h1> 
+    
+    <div class="container">
+        <div id="newtask">
+        <div>
+            <input type="text" placeholder="Task to be done.." >
+            <button id="push" class="btn-link"><span class="link-inner">
+                Add  </span></button>
+        </div>
+
+        <div id="tasks"></div>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#newtask input').value.length == 0){
+        alert("Please Enter a Task")
+    }
+    else{
+        document.querySelector('#tasks').innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete ">
+                    <i class="fa-regular fa-trash-can fa-bounce"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+
+      
+
+ 
+    }
+}
+    </script>
+
+</body>
+</html>
