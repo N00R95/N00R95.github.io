@@ -361,8 +361,9 @@ flex-wrap: wrap;
 
 }
 .serv-card{
+    
 margin: 1rem;
-height: 570px;
+height: 500px;
 width: 450px;
 border-radius:4px;
 background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,
@@ -372,6 +373,7 @@ position: relative;
 color: #fff;
 }
 .serv-card:nth-child(2){
+
 background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%,
     rgba(17,17,17,0.6) 100%),url('/images/python-5.svg');}
 
@@ -433,7 +435,9 @@ margin: -10px;
 .serv-card {
     width: 230px;
     height: 250px;
-    margin: 160px;
+    margin-top: 160px;
+    margin-right: 80px;
+    margin-left: auto;
 }
 .serv button{
     padding: 10px 20px;
